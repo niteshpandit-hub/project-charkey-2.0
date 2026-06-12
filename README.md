@@ -1,63 +1,41 @@
-# project-charkey-2.0
-Project CHĀRKEY 2.0 is an open-source statecraft and macroeconomic framework bridging Kautilyan geopolitics (Arthashastra) with digital governance like Digital Public Infrastructure (DPI) and the Economic Complexity Index (ECI). It operationalizes 500+ macro-concepts across four hierarchical layers using automated GitHub CI/CD pipelines.
-name: Deploy Charkey 2.0 Global Concept Matrix
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+# 🏛️ Project CHĀRKEY 2.0
+> **An Algorithmic Statecraft & Macroeconomic Governance Framework**
 
-jobs:
-  build-matrix:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code Architecture
-        uses: actions/checkout@v4
+Project CHĀRKEY 2.0 is an enterprise-grade, open-source framework designed to bridge classical geopolitical wisdom (inspired by Kautilya's Arthashastra) with modern Digital Public Infrastructure (DPI), predictive financial analytics, and automated administrative accountability. 
 
-      - name: Initialize Statecraft Concepts
-        run: |
-          echo "=========================================================="
-          echo "Initializing 500+ Strategic Macroeconomic Core Vectors..."
-          echo "=========================================================="
-          echo "Executing Layer 1: Institutional Bedrock Audit Protocols..."
-          echo "Executing Layer 2: Human Capital Friction Removals (AACL)..."
-          echo "Executing Layer 3: Economic Complexity & DPI Mappings..."
-          echo "Executing Layer 4: Strategic Shield & Tariff Arbitrage..."
-          echo "System Build: Successful. All Concepts Fully Operationalized."
-         # Project CHĀRKEY 2.0: Global Architectural Framework
+This repository serves as a functional blueprint for a data-driven sovereign economic engine, validated automatically via automated testing pipelines.
 
-This enterprise-grade open-source repository houses the structural, mathematical, and legal blueprints for **Project CHĀRKEY 2.0**. It formalizes over 500+ strategic concepts blending Kautilyan statecraft with advanced macroeconomic engineering.
+---
 
-## 🏛️ System Architecture
+## 🗺️ System Architecture (Strategic Matrix)
 
-*   **L1: Institutional Bedrock & Judicial Supremacy** — Streamlining legal-rational frameworks, $Danda\ Niti$ efficiency models, and automated anti-corruption public ledgers.
-*   **L2: Human Capital Cultivation** — Structural accountability vectors including the Statutory Academic Calendar Law (AACL) and Merit Integrity verification engine.
-*   **L3: Economic Complexity** — Scaling domestic capital via Digital Public Infrastructure (DPI) and high-complexity manufacturing allocation (Semiconductors/Aerospace).
-*   **L4: Strategic Autonomy Shield** — Multi-alignment geopolitical arbitrage tools and managed tariff protection algorithms.
+Below is the live operational layout of the 4-Layer Matrix powering the framework. (GitHub automatically renders this text into a visual flowchart).
 
-## 🚀 Deployment Matrix
-The system uses automated GitHub Actions to deploy conceptual frameworks and audit operational readiness metrics across 500+ distinct macroeconomic vectors.
-# System Files
-.DS_Store
-Thumbs.db
+```mermaid
+graph TD
+    A[Project CHĀRKEY 2.0] --> B[L1: Institutional Bedrock]
+    A --> C[L2: Human Capital]
+    A --> D[L3: Economic Complexity]
+    A --> E[L4: Strategic Autonomy Shield]
+    
+    B --> B1[Automated Administrative KPIs]
+    B --> B2[Contract Enforcement Engine]
+    
+    C --> C1[Statutory Academic Calendar Law]
+    C --> C2[Workforce Delay Cost Metrics]
+    
+    D --> D1[DPI Merchant Ledger & SQL Schema]
+    D --> D2[Working Capital Stress Testing Engine]
+    
+    E --> E1[Asymmetric Tariff Anti-Dumping Logic]
+    E --> E2[Real-time Currency Volatility Swap Tracker]
 
-# Logs and databases
-*.log
-*.sqlite
+    style A fill:#1f77b4,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#aec7e8,stroke:#333,stroke-width:1px
+    style C fill:#ffbb78,stroke:#333,stroke-width:1px
+    style D fill:#98df8a,stroke:#333,stroke-width:1px
+    style E fill:#ff9896,stroke:#333,stroke-width:1px
 
-# IDEs and Editors
-.idea/
-.vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.swp
-
-# Temporary files
-*.tmp
-*.bak
-MIT License
 
 Copyright (c) 2026 Project CHĀRKEY 2.0 Contributors
 
