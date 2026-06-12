@@ -1,0 +1,5 @@
+- name: Run L4 Strategic Shield Security Tests
+        run: |
+          cd L4-strategic-shield
+          python -m unittest test_tariffs.py
+          python -m unittest test_currency.py
