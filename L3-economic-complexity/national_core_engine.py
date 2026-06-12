@@ -146,3 +146,32 @@ if __name__ == "__main__":
     print("======================================================================")
     
     gov_panel.close_engine()
+import unittest
+from national_core_engine import NationalGovernanceEngine
+
+class TestNationalGovernanceCore(unittest.TestCase):
+    def test_database_and_engine_integration(self):
+        # Setup engine in test memory
+        engine = NationalGovernanceEngine(db_name=":memory:", current_usd_rate=83.20)
+        
+        # Seed test data
+        engine.seed_sample_merchant("TEST-01", "27TEST1234T1Z1", 200000.00, 100, "Delhi")
+        
+        # Test macro calculations
+        savings = engine.calculate_macro_arbitrage(1000)
+        self.assertTrue(savings > 0)
+        
+        # Test DB processing loop
+        reports = engine.evaluate_and_log_msme_pool(stress_factor=0.20)
+        self.assertEqual(len(reports), 1)
+        self.assertEqual(reports[0]["id"], "TEST-01")
+        
+        engine.close_engine()
+
+if __name__ == "__main__":
+    unittest.main()
+    - name: Run L3 Economic Complexity & Banking Risk Tests
+        run: |
+          cd L3-economic-complexity
+          python -m unittest test_risk.py
+          python -m unittest test_national_core.py
