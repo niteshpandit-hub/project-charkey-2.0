@@ -1,0 +1,9 @@
+- name: Run L3 Economic Complexity & Banking Risk Tests
+        run: |
+          cd L3-economic-complexity
+          python -m unittest test_risk.py
+
+      - name: Run AACL Compliance Tests
+        run: |
+          cd L2-human-capital
+          python -m unittest test_aacl.py
